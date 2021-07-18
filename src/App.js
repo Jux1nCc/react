@@ -4,6 +4,7 @@ import './App.css'
 import IndexPage from './components/index-page'
 import SunPage from './components/sun-page'
 import CountPage from './components/count-page'
+import Index from './components/brother/index'
 
 // function App () {
 //   return (
@@ -67,6 +68,7 @@ class App extends React.Component {
           obj={{ eba: '黄四郎', xianzhang: '马邦德' }}
         ></SunPage>
         <CountPage num={10} callBack={this.getCount}></CountPage>
+        <Index></Index>
       </div>
     )
   }

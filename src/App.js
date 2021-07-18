@@ -3,6 +3,7 @@ import React from 'react'
 import './App.css'
 import IndexPage from './components/index-page'
 import SunPage from './components/sun-page'
+import CountPage from './components/count-page'
 
 // function App () {
 //   return (
@@ -34,6 +35,9 @@ class App extends React.Component {
   setValue = obj => {
     console.log(obj)
   }
+  getCount = num => {
+    console.log(num)
+  }
   render () {
     return (
       <div className='App'>
@@ -62,6 +66,7 @@ class App extends React.Component {
           name='鹅城'
           obj={{ eba: '黄四郎', xianzhang: '马邦德' }}
         ></SunPage>
+        <CountPage num={10} callBack={this.getCount}></CountPage>
       </div>
     )
   }

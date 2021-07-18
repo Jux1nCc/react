@@ -13,7 +13,7 @@ class IndexPage extends React.Component {
     this.setState({
       num: this.state.num + 1
     },()=>{ 
-      // console.log(this.state.num);
+      console.log(this.state.num);
     })
   }
   zizuajin = () =>{

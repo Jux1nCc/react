@@ -5,6 +5,8 @@ import IndexPage from './components/index-page'
 import SunPage from './components/sun-page'
 import CountPage from './components/count-page'
 import Index from './components/brother/index'
+import Style1 from './components/style/style1'
+import Style2 from './components/style/style2'
 
 // function App () {
 //   return (
@@ -69,6 +71,8 @@ class App extends React.Component {
         ></SunPage>
         <CountPage num={10} callBack={this.getCount}></CountPage>
         <Index></Index>
+        <Style1></Style1>
+        <Style2></Style2>
       </div>
     )
   }
